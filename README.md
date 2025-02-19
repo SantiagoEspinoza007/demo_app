@@ -1,4 +1,4 @@
-# Instalación de Frappe en Ubuntu 22.04
+# Instalación de ERPNext version 14 en Ubuntu 22.04
 
 Este documento describe los pasos para instalar Frappe en Ubuntu 22.04, incluyendo la configuración del modo developer.
 
