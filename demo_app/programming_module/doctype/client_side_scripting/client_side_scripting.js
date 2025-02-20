@@ -56,26 +56,26 @@ frappe.ui.form.on("Client Side Scripting", {
 
   // frm.doc.first_name
 
-//   after_save: function (frm) {
-//     frappe.msgprint(
-//       __("The full name is '{0}'", [
-//         frm.doc.first_name +
-//           " " +
-//           frm.doc.middle_name +
-//           " " +
-//           frm.doc.last_name,
-//       ])
-//     );
+  // after_save: function (frm) {
+  //   frappe.msgprint(
+  //     __("The full name is '{0}'", [
+  //       frm.doc.first_name +
+  //         " " +
+  //         frm.doc.middle_name +
+  //         " " +
+  //         frm.doc.last_name,
+  //     ])
+  //   );
 
-//     for (let row of frm.doc.family_members) {
-//       frappe.msgprint(
-//         __(
-//           "{0}. The name of the family member is '{1}' and relation is '{2}'",
-//           [row.idx, row.name1, row.relation]
-//         )
-//       );
-//     }
-//   },
+  //   for (let row of frm.doc.family_members) {
+  //     frappe.msgprint(
+  //       __(
+  //         "{0}. The name of the family member is '{1}' and relation is '{2}'",
+  //         [row.idx, row.name1, row.relation]
+  //       )
+  //     );
+  //   }
+  // },
 
 	// refresh:function(frm){
 	// 	// frm.set_intro('Now you can create a new Client Side Scripting doctype')
@@ -88,14 +88,15 @@ frappe.ui.form.on("Client Side Scripting", {
 	//////////////////////    frm.set_value    ///////////////////////
 	//////////////////////////////////////////////////////////////////
 
-	// validate:function(frm){
-	// 	// frm.set_value('full_name', frm.doc.first_name + " " + frm.doc.middle_name + " " + frm.doc.last_name)
-	// 	let row = frm.add_child('family_members',{
-	// 		name1: 'Lucky',
-	// 		relation: 'Pet',
-	// 		age: 10
-	// 	})
-	// }
+	validate:function(frm){
+		frm.set_value('full_name', frm.doc.first_name + " " + frm.doc.middle_name + " " + frm.doc.last_name)
+		
+    // let row = frm.add_child('family_members',{
+		// 	name1: 'Lucky',
+		// 	relation: 'Pet',
+		// 	age: 10
+		// })
+	}
 
 	//////////////////////////////////////////////////////////////////
 	/////////////////////////    Events    ///////////////////////////
@@ -116,19 +117,19 @@ frappe.ui.form.on("Client Side Scripting", {
 	/////////////////////////    Button    ///////////////////////////
 	//////////////////////////////////////////////////////////////////
 
-	refresh:function(frm){
-		// frm.add_custom_button('Click Me Button', () =>{
-		// 	frappe.msgprint(__('You Clicked Me!!'));
-		// })
+	// refresh:function(frm){
+	// 	// frm.add_custom_button('Click Me Button', () =>{
+	// 	// 	frappe.msgprint(__('You Clicked Me!!'));
+	// 	// })
 		
-		frm.add_custom_button('Click Me1', () =>{
-			frappe.msgprint(__('You Clicked 1!!'));
-		}, 'click me')
+	// 	frm.add_custom_button('Click Me1', () =>{
+	// 		frappe.msgprint(__('You Clicked 1!!'));
+	// 	}, 'click me')
 
-		frm.add_custom_button('Click Me2', () =>{
-			frappe.msgprint(__('You Clicked 2!!'));
-		}, 'click me')
-	}
+	// 	frm.add_custom_button('Click Me2', () =>{
+	// 		frappe.msgprint(__('You Clicked 2!!'));
+	// 	}, 'click me')
+	// }
 
 });
 
