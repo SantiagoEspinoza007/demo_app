@@ -142,6 +142,10 @@ Ahora puedes acceder a tu sitio en `http://localhost:8000` con las credenciales 
 
 Con esto, Frappe está instalado y listo para su uso en modo developer en Ubuntu 22.04. 🎉
 
+## Documentación de Frappe 
+
+https://docs.frappe.io/framework/user/en/installation
+
 ## Tutorial de instalación 
 
 https://codewithkarani.com/2023/12/31/how-to-install-erpnext-version-15-in-ubuntu-a-step-by-step-guide/
